@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="-30dp"
+        />
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        android:text="Sign in to continue" />
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:id="@+id/username"/>
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:hint="Password"
+        android:id="@+id/password"/>
+
+    <CheckBox
+        android:id="@+id/showPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="Show Password" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="0dp"
+        android:id="@+id/login" />
+
+</LinearLayout>
